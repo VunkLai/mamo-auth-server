@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "django_extensions",  # for dev
     # application
     "user",
+    "application",
     "oauth",
 ]
 
