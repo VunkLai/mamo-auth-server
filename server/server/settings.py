@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "django_extensions",  # for dev
     # application
+    "user",
     "oauth",
 ]
 
@@ -61,6 +62,8 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 ROOT_URLCONF = "server.urls"
+
+LOGIN_URL = "/admin/login/"
 
 TEMPLATES = [
     {
@@ -90,6 +93,8 @@ DATABASES = {
         "NAME": BASE_DIR / "db.sqlite3",
     }
 }
+
+AUTH_USER_MODEL = "user.User"
 
 
 # Password validation
